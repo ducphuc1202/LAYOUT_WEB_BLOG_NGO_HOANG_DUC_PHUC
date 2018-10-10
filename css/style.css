@@ -1,0 +1,423 @@
+/* Default and Define Model CSS */
+@font-face {
+    font-family: myriadProLight;
+    src: url('../fonts/myriad-pro/MyriadPro-Light.woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: myriadProLight, sans-serif;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+img:hover {
+    opacity: 0.6;
+}
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.bold-text {
+    font-weight: bold;
+}
+.italic-text {
+    font-style: italic;
+}
+.blue-text {
+    color: #2b78e4;
+}
+.red-text {
+    color: #ff0000;
+}
+.clear-fix {
+    content: "";
+    display: block;
+    clear: both;
+}
+.hidden {
+    display: none;
+}
+
+/* CSS for header */
+.header {
+    padding: 20px 0px;
+}
+.logo {
+    width: 35%;
+    float: left;
+    height: 200px;
+    padding-top: 20px;
+    text-align: left;
+    padding-left: 15px;
+}
+.banner {
+    width: 65%;
+    float: left;
+    text-align: right;
+}
+.banner img {
+    height: 200px;
+}
+/* CSS for navigation */
+.nav {
+    background-color: #2b78e4;
+    border: 0.2px solid #2b78e4;
+}
+.nav ul {
+    list-style-type: none;
+    padding-left: 5px;
+}
+.nav ul li {
+    display: inline-block;
+    padding: 10px;
+    transition-duration: 1s;
+}
+.nav ul li:hover {
+    background-color: #ffffff;
+    transition-duration: 1s;
+}
+.nav ul li a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+}
+.nav ul li:hover a {
+    color: #2b78e4;
+    transition-duration: 1s;
+}
+/* CSS for main */
+.main {
+    padding-top: 30px;
+}
+.main-content {
+    width: 60%;
+    float: left;
+    padding-left: 15px;
+}
+.main-content .article {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+}
+.article:hover {
+    box-shadow: 0 0 8px #000000;
+}
+.main-content .title {
+    padding: 5px 10px;
+    font-size: 24px;
+    color: #2ba8f6;
+    font-weight: bold;
+    border-left: 5px solid #2ba8f6;
+}
+.info {
+    padding: 5px 0px;
+}
+.info span, .info a {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.info a {
+    text-decoration: none;
+    color: initial;
+}
+.info a:first-child:hover {
+    color: #2ba8f6;
+}
+.info a:last-child:hover {
+    color: #ea4335;
+}
+.info i {
+    margin-right: 5px;
+}
+.fa-user {
+    color: #2ba8f6;
+}
+.fa-folder {
+    color: #ea4335;
+}
+.content {
+    padding: 15px 0px;
+}
+.content-img {
+    width: 30%;
+    float: left;
+}
+.content-text {
+    width: 70%;
+    float: left;
+}
+.main-content .content img {
+    width: 200px;
+    height: 200px;
+}
+.see-more {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 0.5px solid #6c757d;
+    color: #6c757d;
+    margin: 20px 0px;
+    display: inline-block;
+    border-radius: 5px;
+    transition-duration: 1s;
+}
+.see-more:hover {
+    color: #ffffff;
+    background-color: #6c757d;
+    transition-duration: 1s;
+}
+/* CSS for Sidebar */
+.sidebar {
+    width: 40%;
+    float: left;
+    padding: 30px 100px;
+    text-align: center;
+}
+.search input {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    background-image: url('../images/search.svg');
+    background-position: 95%;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    border: none;
+    border-left: 5px solid #e13453;
+    font-size: 18px;
+    color: #e13453;
+}
+.follow {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+    padding: 10px;
+    line-height: 2;
+    background-color: #2b78e4;
+    color: #ffffff;
+    text-align: center;
+    box-shadow: 0 0 8px #000000;
+}
+.follow .title {
+    border-bottom: 3px solid #ffffff;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.follow input[type="email"] {
+    width: 70%;
+    height: 30px;
+    padding: 10px;
+    margin: 0;
+    border: none;
+    margin-top: 10px;
+    color: #f35325;
+    font-weight: bold;
+}
+.follow input[type="submit"] {
+    border:0.5px solid #ffffff;
+    background-color: transparent;
+    width: 50%;
+    height: 30px;
+    line-height: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    transition: 1s;
+}
+.follow input[type="submit"]:hover {
+    color: #ffffff;
+    background-color: #ea4335;
+    transition: 1s;
+}
+.another-post {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.another-post .title {
+    color: #ffffff;
+    background-color: #ea4335;
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 18px;
+}
+.another-post a {
+    display: block;
+    text-decoration: none;
+    padding: 5px 10px 5px 25px;
+    border-left: 3px solid #ea4335;
+    color: #ea4335;
+}
+.another-post a:hover {
+    color: #ffffff;
+    background-color: #f9bb0a;
+}
+.post-list {
+    margin-top: 10px;
+}
+/* CSS for footer */
+.footer {
+    padding: 20px 0px;
+    background-color: #333;
+    color: #fff;
+}
+.footer .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.quick-link {
+    width: 40%;
+    float: left;
+    padding-left: 50px;
+}
+.footer a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+.subject {
+    width: 30%;
+    float: left;
+    padding-left: 100px;
+    padding-right: 50px;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+.copyright {
+    width: 30%;
+    float: left;
+    padding-left: 50px;
+}
+.social {
+    margin-top: 20px;
+}
+.social a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    padding; 10px;
+    line-height: 30px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    transition: 1s;
+}
+.social a:hover {
+    color: #333;
+    background-color: #fff;
+    transition: 1s;
+}
+
+/******************************************* CSS FOR FRONT-END.HTML *******************************************/
+
+.main-section {
+    margin-top: 40px;
+    padding: 15px;
+    float: left;
+    width: 60%;
+}
+.main-section .title {
+    color: #f92672;
+}
+.post-content {
+    text-align: center;
+}
+.post-content .source-quote {
+    text-align: right;
+    color: #f00;
+}
+.post-content section {
+    margin: 20px 0px;
+}
+.post-content p, .post-content .title {
+    text-align: left;
+}
+.post-content-text .title {
+    margin: 10px 0px;
+    color: #fff;
+    background-color: #00b5ad;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-indent: 15px;
+}
+.post-content img {
+    border-radius: 50%;
+}
+.about-author {
+    margin-top: 20px;
+    box-shadow: 0 0 8px #000000;
+    padding-left: 15px;
+}
+.author-info {
+    padding: 20px;
+}
+.author-img {
+    float: left;
+    width: 10%;
+}
+.author-info-text {
+    float: left;
+    width: 90%;
+    padding: 0px 30px;
+}
+.author-info-text a {
+    text-decoration: none;
+    color: brown;
+}
+.nav-content {
+    margin-top: 30px;
+    text-align: left;
+}
+.nav-content .title {
+    color: #ffffff;
+    background-color: #1eb771;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.content-list a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    border-left: 3px solid #1eb771;
+    color: #1eb771;
+}
+.content-list a:hover {
+    color: #fff;
+    background-color: #f92672;
+}
+.tag {
+    text-align: right;
+}
+.tag-title {
+    margin: 5px;
+}
+.tag-item {
+    display: inline-block;
+    padding: 2px 5px 2px 5px;
+    font-size: 14px;
+    border: 0.5px solid #6c757d;
+    color: #6c757d;
+}
+.tag-item:hover {
+    color: #fff;
+    background-color: #6c757d;
+    cursor:pointer;
+}
+.tag-item i {
+    margin-right: 5px;
+}
